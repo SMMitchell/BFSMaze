@@ -1,0 +1,68 @@
+Stephen Mitchell
+c3349182
+COMP2230 - Assignment 1
+
+
+HOW TO RUN THE BREADTH FIRST SEARCH MAZE SOLVING PROGRAM: 
+
+********************** GENERATE THE MAZE **************************
+
+
+STEP 1:  Compile Maze Generator using command line argument: 
+
+javac MazeGenerator.java
+
+
+STEP 2:  Run Maze Generator Program using command line argument: 
+
+Type java MazeGenerator followed by the amount Rows and Columns 
+for the maze and the desired file name.
+
+Example:
+
+java MazeGenerator 5 6 maze.dat
+
+will produce a maze with 5 rows and 6 columns, then save it to
+a file called "maze.dat"
+
+A new Maze will then be generated and displayed, along with 
+a successful notification containing the new Maze file name.
+
+* If either the number of Rows or Columns exceeds 10 the maze 
+* will not be displayed. 
+
+
+
+************************* SOLVE THE MAZE ***************************
+
+STEP 1:  Compile Maze Generator using command line argument:
+
+javac MazeSolverBFS.java
+
+
+STEP 2: Run Maze Generator Program using command line argument:
+
+Type java MazeSolverBFS followed by the filename you would like to use
+
+Example:
+
+java MazeSolverBFS maze.data 
+
+this would solve the maze generated in the example above
+
+The maze from the file will now be solved and will present the following
+information:
+
+Each cell visited in the optimal solution, in the order they were traversed, 
+beginning with the Start Node.
+
+The number of steps taken in the optimal solution
+
+the number of steps taken in the Breadth First Search
+
+The number of seconds taken to solve the maze.
+
+A display of the maze if either dimension does not exceed 10
+
+
+
